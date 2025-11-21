@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Museu Digital da Memória Africana e Afro-Brasileira</title>
+  <meta
+    name="description"
+    content="Museu digital dedicado à preservação e democratização da memória africana e afro-brasileira, promovendo uma nova geopolítica do conhecimento em uma perspectiva Sul-Sul."
+  />
+  <meta
+    name="keywords"
+    content="museu digital, memória africana, cultura afro-brasileira, Lei 10.639, patrimônio imaterial, repatriação digital, estudos africanos"
+  />
+  <meta name="author" content="Jorge Miguel" />
+  
+  <!-- Favicon padrão para navegadores -->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/logo.png" />
+  <!-- Ícone para Safari no iOS (Tela inicial) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png" />
+
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      color: #1B130D;
+    }
+    
+    h2 {
+      color: #E6BE69;
+      margin-bottom: 1.5rem;
+    }
+    
+    /* Limitar altura do carousel */
+    .carousel-inner {
+      max-height: 500px;
+    }
+    
+    .carousel-item img {
+      max-height: 500px;
+      object-fit: cover;
+      object-position: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Menu principal" style="background-color: #8B5527;">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html" title="Página Inicial">
+          <img src="img/logo.png" alt="Logo Museu Digital" width="30" height="30" class="me-2">
+          <div class="d-flex flex-column lh-sm">
+            <span class="fw-bold">Museu Digital</span>
+            <small style="font-size: 0.75rem;">Memória Africana e Afro-brasileira</small>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html" title="Página Inicial">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre-lei-10639.html" title="Sobre a Lei 10.639">Lei 10.639</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cultura-afro-brasileira.html" title="Cultura Afro-Brasileira">Cultura</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registros-praticas-pedagogicas.html" title="Registros e Práticas">Registros</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/slide-1.png" class="d-block w-100" alt="Banner sobre Cultura Afro-Brasileira" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Bem-vindo</h5>
+            <p>Educação e valorização da cultura afro-brasileira</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slide-2.png" class="d-block w-100" alt="Lei 10.639/03" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Lei 10.639/03</h5>
+            <p>História e cultura africana e afro-brasileira nas escolas</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <article class="container my-5">
+      <section class="mb-5">
+        <h2><i class="fas fa-home me-2"></i>Bem-vindo ao Museu Digital</h2>
+        <p>
+          O Museu Digital da Memória Africana e Afro-Brasileira é um experimento político e tecnológico 
+          que emerge no contexto de uma revalorização da herança africana no Brasil. Este projeto representa 
+          uma intervenção direta na geopolítica do conhecimento, promovendo uma perspectiva Sul-Sul de 
+          preservação e democratização do patrimônio cultural.
+        </p>
+      </section>
+
+      <section class="mb-5">
+        <h2><i class="fas fa-bullseye me-2"></i>Nosso Propósito</h2>
+        <p>
+          Desafiar e reverter o modelo tradicional que divide o mundo entre locais de produção de cultura 
+          popular (Sul Global) e locais de arquivamento e consagração da "Arte" (Norte Global). 
+          Operamos como um "museu sem donos", baseado em políticas de abertura, colaboração e acessibilidade, 
+          buscando democratizar o acesso ao conhecimento sobre a memória africana e afro-brasileira.
+        </p>
+      </section>
+
+      <section class="mb-5">
+        <h2><i class="fas fa-list-check me-2"></i>Princípios Orientadores</h2>
+        <ul>
+          <li><strong>Repatriação Digital:</strong> Liberação de cópias digitais para circulação gratuita</li>
+          <li><strong>Doação Digital:</strong> Digitalização e devolução de documentos aos proprietários</li>
+          <li><strong>Etnografia Digital:</strong> Engajamento de comunidades através de museu itinerante</li>
+          <li><strong>Generosidade Digital:</strong> Compartilhamento de experiências e curadoria coletiva</li>
+        </ul>
+      </section>
+
+      <section class="mb-5">
+        <h2><i class="fas fa-book me-2"></i>Referência Bibliográfica</h2>
+        <p class="text-muted">
+          <strong>SANSONE, Livio.</strong> The Dilemmas of Digital Patrimonialization: The Digital Museum of African and Afro-Brazilian Memory. 
+          <a href="artigo the-dilemmas-of-digital-patrimonialization-the-digital-museum-of-african-and-afro-brazilian-memory.pdf" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+            <i class="fas fa-file-pdf me-1"></i>Acesse o artigo completo (PDF)
+          </a>
+        </p>
+        <p class="text-muted mt-2">
+          <small><i class="fas fa-image me-1"></i>Imagens geradas por Google Gemini</small>
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="text-white text-center py-4 mt-5" style="background-color: #1B130D;">
+    <nav aria-label="Menu do rodapé" class="mb-3">
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="index.html" class="text-white text-decoration-none">Início</a></li>
+        <li class="list-inline-item">|</li>
+        <li class="list-inline-item"><a href="sobre-lei-10639.html" class="text-white text-decoration-none">Lei 10.639</a></li>
+        <li class="list-inline-item">|</li>
+        <li class="list-inline-item"><a href="cultura-afro-brasileira.html" class="text-white text-decoration-none">Cultura</a></li>
+        <li class="list-inline-item">|</li>
+        <li class="list-inline-item"><a href="registros-praticas-pedagogicas.html" class="text-white text-decoration-none">Registros</a></li>
+        <li class="list-inline-item">|</li>
+        <li class="list-inline-item"><a href="sitemap.xml" class="text-white text-decoration-none">Sitemap</a></li>
+      </ul>
+    </nav>
+    <p class="mb-2"><small>Site criado para o curso de Pós-Graduação em Desenvolvimento de Sistemas WEB e Aplicativos Móveis<br>
+    Matéria: Desenvolvimento para Internet I, Módulo 3<br>
+    Profa. Adriana Belon</small></p>
+    <p class="mb-0 mt-2"><a href="https://jorge-miguel.wc4.com.br/" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none">Jorge Miguel - Desenvolvimento de Sistemas</a></p>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Adriana Belon - Educação e Cultura Afro-Brasileira",
+    "description": "Site dedicado à educação sobre cultura afro-brasileira, implementação da Lei 10.639/03 e registro de práticas pedagógicas inclusivas.",
+    "url": "https://www.seusite.com.br",
+    "author": {
+      "@type": "Person",
+      "name": "Jorge Miguel"
+    },
+    "inLanguage": "pt-BR",
+    "keywords": "Lei 10.639, cultura afro-brasileira, educação inclusiva, história africana, práticas pedagógicas"
+  }
+  </script>
+
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
